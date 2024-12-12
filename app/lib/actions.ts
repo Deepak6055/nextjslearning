@@ -123,6 +123,8 @@ export async function updateInvoice(
     formData: FormData,
   ) {
     try {
+      console.log(formData);
+      
       await signIn('credentials', formData);
     } catch (error) {
       if (error instanceof AuthError) {
