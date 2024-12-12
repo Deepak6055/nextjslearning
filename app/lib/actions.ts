@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
-import { log } from 'console';
+// import { log } from 'console';
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 const FormSchema = z.object({
@@ -119,7 +119,7 @@ export async function updateInvoice(
 
 
   export async function authenticate(
-    prevState: string | undefined,
+    // prevState: string | undefined,
     formData: FormData,
   ) {
     try {
