@@ -5,12 +5,12 @@ import {
   CheckIcon,
   ClockIcon,
   CurrencyDollarIcon,
-  UserCircleIcon,
+  UserCircleIcon, 
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import {updateInvoice} from '@/app/lib/actions'
-import { log } from 'console';
+// import { log } from 'console';
 
 export default function EditInvoiceForm({
   invoice,
@@ -20,7 +20,7 @@ export default function EditInvoiceForm({
   customers: CustomerField[];
 }) {
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
-  console.log("updated",updateInvoiceWithId);
+  // console.log("updated",updateInvoiceWithId);
   
   return (
     <form action={updateInvoiceWithId}>
